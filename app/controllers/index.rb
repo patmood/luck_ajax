@@ -11,5 +11,6 @@ post '/rolls' do
 
   @roll = value ? Roll.create({ value: value }) : Roll.create
 
-  erb :index  # HINT: what does this do? what should we do instead?
+  # erb :index  # HINT: what does this do? what should we do instead?
+  erb :diceimage, :layout => false #we'll just return the die HTML instead
 end
